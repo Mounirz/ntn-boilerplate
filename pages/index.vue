@@ -4,7 +4,17 @@
       <h1 class="title text-center">Nuxt — Tailwind — Netlify CMS</h1>
       <h2 class="subtitle text-center">Boilerplate</h2>
     </section>
-
+<form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     <section class="mt-8">
       <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
       <posts post-type="blog" :amount="1" />
