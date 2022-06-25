@@ -80,3 +80,15 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
+  - name: 'Partners'
+    label: 'Partner'
+    label_singular: 'Partners'
+    folder: 'content/partners'
+    create: true
+    format: 'frontmatter'
+    slug: '{{slug}}'
+    preview_path: 'partners/{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', required: true, allow_multiple: false }
